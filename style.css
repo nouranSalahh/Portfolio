@@ -274,6 +274,7 @@ details[open] .chev::after{transform:rotate(-135deg);top:11px}
 .shot .zoom{border:0;padding:0;background:var(--sunk);cursor:zoom-in;display:block;width:100%}
 .shot img{width:100%;aspect-ratio:16/10;object-fit:contain;background:var(--sunk)}
 .shot figcaption{padding:12px 14px}
+.shot .kicker{display:inline-block;font:700 .7rem/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--eg);background:var(--eg-soft);padding:5px 8px;border-radius:999px;margin-bottom:8px}
 .shot b{display:block;font-size:.97rem}
 .shot small{color:var(--muted);font-size:.86rem;line-height:1.4;display:block;margin-top:2px}
 .tabs{margin-top:28px}

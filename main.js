@@ -166,7 +166,7 @@ function renderMedia(slot){
   list.forEach((m, i) => {
     const f = document.createElement("figure"); f.className = "shot";
     f.innerHTML = `<button type="button" class="zoom" aria-label="Enlarge ${esc(m.t || "image")}"><img loading="lazy" src="${esc(m.src)}" alt="${esc(m.t || "Image")}"></button>
-      <figcaption><b data-mf="t">${esc(m.t || "")}</b><small data-mf="s">${esc(m.s || "")}</small></figcaption>`;
+      <figcaption>${m.k ? `<span class="kicker">${esc(m.k)}</span>` : ""}<b data-mf="t">${esc(m.t || "")}</b><small data-mf="s">${esc(m.s || "")}</small></figcaption>`;
     f.querySelector(".zoom").onclick = () => openLb(list, i);
     if (editing) {
       f.querySelectorAll("[data-mf]").forEach(el => { el.contentEditable = "true"; if (!el.textContent) el.dataset.ph = el.dataset.mf === "t" ? "Title" : "Description";
