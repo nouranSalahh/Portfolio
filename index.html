@@ -1,1694 +1,447 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nour · Media Buyer</title>
-
-<!--
-  ============================================================
-  HOW TO ADD YOUR IMAGES (VS Code)
-  ============================================================
-  Put your screenshots in the /images folder next to this file,
-  using these filenames (or edit the src="images/..." paths
-  below to match your own):
-
-  SHOPIFY GROUP
-     images/pink-friday.png
-     images/mothers-day.png
-     images/traffic-view.png
-     images/recovery-month.png
-     images/post-event-dip.png
-
-  META ADS GROUP
-     images/meta-cbo-cairo.jfif
-     images/meta-dec-2025.jfif
-     images/meta-nov-2025.jfif
-     images/meta-oct-nov-2025.jfif
-     images/meta-abo-cairo.jfif
-
-  OPTIONAL
-     images/headshot.jpg   → your photo in the hero
-
-  Until a real image is added, each slot shows a soft platform-
-  colored placeholder — nothing will look "broken". Click any
-  image once added to open it full-size in the built-in viewer.
-  ============================================================
--->
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nouran Salah, Media Buyer</title>
+<meta name="description" content="Senior Media Buyer at the E-Gurus agency. Meta, Google, TikTok and Snapchat ads for e-commerce, with campaign results, screenshots, skills and education.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
-<style>
-  :root{
-    --blush:        #fff6f4;
-    --blush-deep:   #ffeae6;
-    --surface:      #ffffff;
-    --cherry:       #c23a5e;
-    --cherry-deep:  #9c2d49;
-    --cherry-pale:  #f6d9de;
-    --plum:         #3a1f2b;
-    --plum-soft:    #6f4959;
-    --gold:         #c79b4b;
-    --gold-deep:    #93701f;
-    --gold-pale:    #f2e4c4;
-    --line:         #f0d7dc;
-
-    --display: "Fraunces", serif;
-    --body:    "Poppins", sans-serif;
-    --mono:    "Space Mono", monospace;
-  }
-
-  *{ box-sizing:border-box; margin:0; padding:0; }
-
-  html{ scroll-behavior:smooth; }
-
-  body{
-    background:var(--blush);
-    color:var(--plum);
-    font-family:var(--body);
-    font-weight:400;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-
-  a{ color:inherit; text-decoration:none; }
-  img{ max-width:100%; display:block; }
-  button{ font:inherit; }
-
-  ::selection{ background:var(--cherry); color:#fff; }
-
-  /* ---------- utility ---------- */
-  .wrap{
-    max-width:1140px;
-    margin:0 auto;
-    padding:0 32px;
-  }
-  .eyebrow{
-    font-family:var(--mono);
-    font-size:0.72rem;
-    letter-spacing:0.18em;
-    text-transform:uppercase;
-    color:var(--cherry);
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin-bottom:18px;
-  }
-  .eyebrow::before{
-    content:"";
-    width:22px; height:1px;
-    background:var(--cherry);
-    display:inline-block;
-  }
-  h1,h2,h3{
-    font-family:var(--display);
-    font-weight:600;
-    color:var(--plum);
-    letter-spacing:-0.01em;
-  }
-  section{ position:relative; padding:110px 0; }
-  .section-title{
-    font-size:clamp(1.9rem, 3.2vw, 2.6rem);
-    max-width:640px;
-    margin-bottom:16px;
-  }
-  .section-sub{
-    color:var(--plum-soft);
-    max-width:560px;
-    font-size:0.98rem;
-    margin-bottom:56px;
-  }
-  .section-sub code{
-    font-family:var(--mono);
-    background:var(--cherry-pale);
-    color:var(--cherry-deep);
-    padding:2px 6px;
-    border-radius:4px;
-    font-size:0.82em;
-  }
-
-  /* ---------- cherry-stem divider (signature element) ---------- */
-  .stem-divider{
-    display:flex;
-    justify-content:center;
-    padding:6px 0 0;
-  }
-  .stem-divider svg{ width:120px; height:34px; }
-  .stem-divider.mini{ padding:44px 0; }
-  .stem-divider.mini svg{ width:80px; height:24px; }
-
-  /* ---------- nav ---------- */
-  header.nav{
-    position:fixed;
-    top:0; left:0; right:0;
-    z-index:50;
-    background:rgba(255,246,244,0.82);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-inner{
-    max-width:1140px;
-    margin:0 auto;
-    padding:18px 32px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-  }
-  .brand{
-    font-family:var(--display);
-    font-weight:600;
-    font-size:1.15rem;
-    display:flex;
-    align-items:center;
-    gap:8px;
-  }
-  .brand .dot{ color:var(--cherry); }
-  .nav-links{
-    display:flex;
-    gap:34px;
-    font-size:0.84rem;
-    font-weight:500;
-    letter-spacing:0.02em;
-  }
-  .nav-links a{
-    opacity:0.75;
-    transition:opacity .2s ease, color .2s ease;
-    position:relative;
-  }
-  .nav-links a:hover{ opacity:1; color:var(--cherry); }
-  .nav-toggle{ display:none; background:none; border:none; font-size:1.4rem; color:var(--plum); cursor:pointer; }
-
-  @media (max-width: 760px){
-    .nav-links{
-      position:absolute;
-      top:100%; left:0; right:0;
-      background:var(--surface);
-      flex-direction:column;
-      padding:20px 32px;
-      gap:16px;
-      border-bottom:1px solid var(--line);
-      display:none;
-    }
-    .nav-links.open{ display:flex; }
-    .nav-toggle{ display:block; }
-  }
-
-  /* ---------- hero ---------- */
-  .hero{
-    padding:190px 0 120px;
-    position:relative;
-    overflow:hidden;
-  }
-  .hero::before{
-    content:"";
-    position:absolute;
-    top:-160px; right:-160px;
-    width:480px; height:480px;
-    border-radius:50%;
-    background:radial-gradient(circle at 30% 30%, var(--blush-deep), transparent 70%);
-    z-index:0;
-  }
-  .hero-grid{
-    display:grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap:60px;
-    align-items:center;
-    position:relative;
-    z-index:1;
-  }
-  .hero h1{
-    font-size:clamp(2.5rem, 5vw, 4rem);
-    line-height:1.06;
-  }
-  .hero h1 em{
-    font-style:italic;
-    color:var(--cherry);
-  }
-  .hero-desc{
-    margin-top:26px;
-    max-width:460px;
-    color:var(--plum-soft);
-    font-size:1.02rem;
-  }
-  .hero-tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:34px;
-  }
-  .tag{
-    font-family:var(--mono);
-    font-size:0.72rem;
-    letter-spacing:0.03em;
-    padding:8px 14px;
-    border-radius:999px;
-    background:var(--surface);
-    border:1px solid var(--line);
-    color:var(--plum-soft);
-  }
-  .hero-card{
-    background:var(--surface);
-    border:1px solid var(--line);
-    border-radius:28px;
-    padding:40px 34px;
-    box-shadow:0 30px 60px -30px rgba(194,58,94,0.25);
-    position:relative;
-  }
-  .hero-card .cap{
-    font-family:var(--mono);
-    font-size:0.7rem;
-    letter-spacing:0.12em;
-    text-transform:uppercase;
-    color:var(--plum-soft);
-  }
-  .hero-card .big{
-    font-family:var(--mono);
-    font-weight:700;
-    font-size:clamp(2.4rem, 5vw, 3.2rem);
-    color:var(--cherry-deep);
-    margin:6px 0 4px;
-    line-height:1;
-  }
-  .hero-card .delta{
-    font-family:var(--mono);
-    font-size:0.8rem;
-    color:var(--gold);
-    font-weight:700;
-  }
-  .hero-card hr{
-    border:none;
-    border-top:1px dashed var(--line);
-    margin:24px 0;
-  }
-  .mini-stats{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
-  .mini-stats div span{
-    display:block;
-    font-family:var(--mono);
-    font-weight:700;
-    color:var(--plum);
-    font-size:1.1rem;
-  }
-  .mini-stats div small{
-    color:var(--plum-soft);
-    font-size:0.72rem;
-    letter-spacing:0.02em;
-  }
-
-  /* ---------- avatar (optional headshot) ---------- */
-  .avatar-slot{
-    width:46px; height:46px;
-    border-radius:50%;
-    overflow:hidden;
-    background:var(--cherry-pale);
-    display:flex; align-items:center; justify-content:center;
-    font-family:var(--display); color:var(--cherry-deep); font-weight:600;
-    flex-shrink:0;
-  }
-  .avatar-slot img{ width:100%; height:100%; object-fit:cover; }
-
-  /* ---------- overview strip ---------- */
-  .overview{ padding:70px 0; }
-  .overview .wrap{
-    display:flex;
-    align-items:center;
-    gap:24px;
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
-    padding:34px 32px;
-  }
-  .overview p{
-    font-family:var(--display);
-    font-style:italic;
-    font-size:1.25rem;
-    color:var(--plum-soft);
-    line-height:1.5;
-  }
- /* Contact */
-
-.contact-links{
-    max-width:700px;
-    margin:40px auto 0;
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-}
-
-.contact-item{
-    display:flex;
-    align-items:center;
-    gap:18px;
-
-    background:var(--surface);
-    border:1px solid var(--line);
-    border-radius:16px;
-
-    padding:18px 24px;
-
-    transition:.3s;
-}
-
-.contact-item:hover{
-    transform:translateY(-3px);
-    border-color:var(--cherry);
-    box-shadow:0 10px 30px rgba(194,58,94,.12);
-}
-
-.contact-item i{
-    width:42px;
-    height:42px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-    background:var(--cherry-pale);
-    color:var(--cherry);
-
-    font-size:20px;
-}
-
-.contact-item span{
-    font-size:16px;
-    color:var(--plum);
-    font-weight:500;
-}
-
-@media(max-width:700px){
-
-.contact-item{
-    padding:16px 18px;
-}
-
-.contact-item span{
-    font-size:15px;
-}
-
-}
-
-  /* ---------- stat grid ---------- */
-  .stat-grid{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:1px;
-    background:var(--line);
-    border:1px solid var(--line);
-    border-radius:20px;
-    overflow:hidden;
-  }
-  .stat-cell{
-    background:var(--surface);
-    padding:32px 26px;
-    transition:background .25s ease;
-  }
-  .stat-cell:hover{ background:var(--blush-deep); }
-  .stat-cell .num{
-    font-family:var(--mono);
-    font-weight:700;
-    font-size:1.6rem;
-    color:var(--cherry-deep);
-  }
-  .stat-cell .label{
-    margin-top:6px;
-    font-size:0.82rem;
-    color:var(--plum-soft);
-  }
-  .stat-cell .delta{
-    margin-top:12px;
-    font-family:var(--mono);
-    font-size:0.72rem;
-    color:var(--gold);
-    font-weight:700;
-  }
-  @media (max-width: 860px){ .stat-grid{ grid-template-columns:repeat(2,1fr); } }
-
-  /* ---------- proof group headers ---------- */
-  .proof-group-header{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    margin-bottom:28px;
-  }
-  .proof-group-header h3{
-    font-size:1.3rem;
-  }
-  .platform-badge{
-    font-family:var(--mono);
-    font-size:0.68rem;
-    letter-spacing:0.06em;
-    text-transform:uppercase;
-    font-weight:700;
-    padding:8px 14px;
-    border-radius:999px;
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    white-space:nowrap;
-  }
-  .platform-badge.shopify{ background:var(--cherry-pale); color:var(--cherry-deep); }
-  .platform-badge.meta{ background:var(--gold-pale); color:var(--gold-deep); }
-  .proof-group-count{
-    font-family:var(--mono);
-    font-size:0.75rem;
-    color:var(--plum-soft);
-    margin-left:auto;
-  }
-  .proof-group{ margin-bottom:8px; }
-
-  /* ---------- gallery / proof of results ---------- */
-  .gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap:22px;
-  }
-  @media (max-width: 900px){ .gallery-grid{ grid-template-columns:repeat(2,1fr); } }
-  @media (max-width: 600px){ .gallery-grid{ grid-template-columns:1fr; } }
-
-  .shot{
-    background:var(--surface);
-    border:1px solid var(--line);
-    border-radius:18px;
-    overflow:hidden;
-    transition:transform .3s ease, box-shadow .3s ease;
-    border-top:3px solid var(--cherry);
-  }
-  .shot.meta{ border-top-color:var(--gold); }
-  .shot:hover{
-    transform:translateY(-6px);
-    box-shadow:0 24px 40px -22px rgba(194,58,94,0.3);
-  }
-  .shot-frame{
-    aspect-ratio: 4 / 3;
-    background:linear-gradient(135deg, var(--blush-deep), var(--cherry-pale));
-    position:relative;
-    overflow:hidden;
-    width:100%;
-    border:none;
-    padding:0;
-    cursor:pointer;
-    display:block;
-  }
-  .shot.meta .shot-frame{ background:linear-gradient(135deg, var(--gold-pale), var(--blush-deep)); }
-  .shot-frame img{
-    width:100%; height:100%;
-    object-fit:cover;
-    position:absolute; inset:0;
-    transition:transform .5s ease;
-  }
-  .shot:hover .shot-frame img{ transform:scale(1.05); }
-  .shot-frame .placeholder{
-    position:absolute; inset:0;
-    text-align:center;
-    color:var(--cherry-deep);
-    font-family:var(--mono);
-    font-size:0.68rem;
-    letter-spacing:0.05em;
-    padding:0 20px;
-    z-index:1;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-  }
-  .shot.meta .shot-frame .placeholder{ color:var(--gold-deep); }
-  .shot-frame .placeholder .ic{ font-size:1.8rem; display:block; margin-bottom:10px; }
-  .shot-frame .placeholder .fname{ opacity:0.7; margin-top:4px; }
-  .shot-frame .zoom-hint{
-    position:absolute;
-    top:12px; right:12px;
-    width:30px; height:30px;
-    border-radius:50%;
-    background:rgba(255,255,255,0.85);
-    color:var(--plum);
-    display:flex; align-items:center; justify-content:center;
-    font-size:0.85rem;
-    opacity:0;
-    transform:translateY(-4px);
-    transition:opacity .25s ease, transform .25s ease;
-    z-index:2;
-  }
-  .shot:hover .zoom-hint{ opacity:1; transform:translateY(0); }
-  .shot-body{ padding:18px 20px 20px; }
-  .shot-body .tag-sm{
-    font-family:var(--mono);
-    font-size:0.65rem;
-    letter-spacing:0.08em;
-    text-transform:uppercase;
-    color:var(--cherry);
-  }
-  .shot.meta .shot-body .tag-sm{ color:var(--gold-deep); }
-  .shot-body h4{
-    font-family:var(--display);
-    font-size:1.05rem;
-    margin:5px 0 6px;
-  }
-  .shot-body p{
-    font-size:0.82rem;
-    color:var(--plum-soft);
-  }
-
-  /* ---------- lightbox ---------- */
-  .lightbox{
-    position:fixed; inset:0;
-    background:rgba(58,31,43,0.92);
-    z-index:200;
-    display:none;
-    align-items:center;
-    justify-content:center;
-    padding:40px 24px;
-  }
-  .lightbox.open{ display:flex; }
-  .lightbox-inner{
-    max-width:min(920px, 92vw);
-    max-height:86vh;
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:14px;
-  }
-  .lightbox-inner img{
-    max-height:70vh;
-    width:auto;
-    margin:0 auto;
-    border-radius:14px;
-    box-shadow:0 30px 70px -20px rgba(0,0,0,0.6);
-    background:#fff;
-  }
-  .lightbox-caption{
-    color:#fdeef1;
-    text-align:center;
-    font-size:0.88rem;
-  }
-  .lightbox-caption strong{ font-family:var(--display); font-size:1.1rem; display:block; margin-bottom:4px; }
-  .lightbox-close, .lightbox-nav{
-    position:absolute;
-    background:rgba(255,255,255,0.12);
-    border:1px solid rgba(255,255,255,0.25);
-    color:#fff;
-    border-radius:50%;
-    width:42px; height:42px;
-    display:flex; align-items:center; justify-content:center;
-    cursor:pointer;
-    font-size:1.1rem;
-    transition:background .2s ease;
-  }
-  .lightbox-close:hover, .lightbox-nav:hover{ background:rgba(255,255,255,0.24); }
-  .lightbox-close{ top:24px; right:24px; }
-  .lightbox-nav.prev{ left:24px; top:50%; transform:translateY(-50%); }
-  .lightbox-nav.next{ right:24px; top:50%; transform:translateY(-50%); }
-  @media (max-width:700px){
-    .lightbox-nav{ width:36px; height:36px; }
-    .lightbox-nav.prev{ left:10px; } .lightbox-nav.next{ right:10px; }
-    .lightbox-close{ top:12px; right:12px; }
-  }
-
-  /* ---------- month cards ---------- */
-  .month-grid{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:20px;
-  }
-  @media (max-width: 900px){ .month-grid{ grid-template-columns:repeat(2,1fr); } }
-  @media (max-width: 560px){ .month-grid{ grid-template-columns:1fr; } }
-
-  .month-card{
-    background:var(--surface);
-    border:1px solid var(--line);
-    border-radius:20px;
-    padding:26px 22px;
-    position:relative;
-  }
-  .month-card .tag-sm{
-    font-family:var(--mono);
-    font-size:0.65rem;
-    letter-spacing:0.08em;
-    text-transform:uppercase;
-    color:var(--gold);
-  }
-  .month-card h4{
-    font-family:var(--display);
-    font-size:1.15rem;
-    margin:6px 0 14px;
-  }
-  .month-card .sales{
-    font-family:var(--mono);
-    font-weight:700;
-    font-size:1.5rem;
-    color:var(--cherry-deep);
-  }
-  .month-card .row{
-    display:flex;
-    justify-content:space-between;
-    font-size:0.78rem;
-    color:var(--plum-soft);
-    border-top:1px dashed var(--line);
-    padding:8px 0;
-  }
-  .month-card .row span:last-child{ color:var(--plum); font-weight:600; font-family:var(--mono); }
-
-  /* ---------- table ---------- */
-  .table-wrap{
-    overflow-x:auto;
-    background:var(--surface);
-    border:1px solid var(--line);
-    border-radius:20px;
-  }
-  table{
-    width:100%;
-    border-collapse:collapse;
-    min-width:680px;
-    font-size:0.86rem;
-  }
-  thead th{
-    text-align:left;
-    background:var(--cherry);
-    color:#fff;
-    font-family:var(--mono);
-    font-weight:400;
-    font-size:0.68rem;
-    letter-spacing:0.08em;
-    text-transform:uppercase;
-    padding:16px 18px;
-  }
-  tbody td{
-    padding:14px 18px;
-    border-bottom:1px solid var(--line);
-    color:var(--plum-soft);
-  }
-  tbody td:first-child{ color:var(--plum); font-weight:600; }
-  tbody tr:nth-child(even){ background:var(--blush); }
-  tbody td.roas{ color:var(--cherry-deep); font-family:var(--mono); font-weight:700; }
-  tbody tr:hover{ background:var(--cherry-pale); }
-
-  /* ---------- timeline ---------- */
-  .timeline{ position:relative; padding-left:34px; }
-  .timeline::before{
-    content:"";
-    position:absolute;
-    left:6px; top:6px; bottom:6px;
-    width:1px;
-    background:repeating-linear-gradient(to bottom, var(--cherry) 0 6px, transparent 6px 12px);
-  }
-  .t-item{ position:relative; padding-bottom:46px; }
-  .t-item:last-child{ padding-bottom:0; }
-  .t-item::before{
-    content:"🍒";
-    position:absolute;
-    left:-34px; top:-2px;
-    font-size:0.95rem;
-  }
-  .t-item .tag-sm{
-    font-family:var(--mono);
-    font-size:0.68rem;
-    letter-spacing:0.06em;
-    text-transform:uppercase;
-    color:var(--gold);
-  }
-  .t-item h4{
-    font-family:var(--display);
-    font-size:1.25rem;
-    margin:6px 0 8px;
-  }
-  .t-item p{
-    color:var(--plum-soft);
-    max-width:640px;
-    font-size:0.92rem;
-  }
-  /* ===================================================
-   RESPONSIVE IMPROVEMENTS
-=================================================== */
-
-/* Large Screens */
-@media (min-width:1600px){
-
-.wrap{
-    max-width:1400px;
-}
-
-.hero h1{
-    font-size:5rem;
-}
-
-.section-title{
-    font-size:3.2rem;
-}
-
-}
-
-/* Laptops */
-@media (max-width:1200px){
-
-.hero-grid{
-    gap:40px;
-}
-
-.wrap{
-    padding:0 24px;
-}
-
-}
-
-/* Tablets */
-@media (max-width:992px){
-
-section{
-    padding:80px 0;
-}
-
-.hero{
-    padding:150px 0 80px;
-}
-
-.hero-grid{
-    grid-template-columns:1fr;
-    text-align:center;
-}
-
-.hero-desc{
-    margin:auto;
-    margin-top:25px;
-}
-
-.hero-tags{
-    justify-content:center;
-}
-
-.hero-card{
-    max-width:550px;
-    margin:auto;
-}
-
-.overview .wrap{
-    flex-direction:column;
-    text-align:center;
-}
-
-.stat-grid{
-    grid-template-columns:repeat(2,1fr);
-}
-
-.gallery-grid{
-    grid-template-columns:repeat(2,1fr);
-}
-
-.month-grid{
-    grid-template-columns:repeat(2,1fr);
-}
-
-.skills-grid{
-    grid-template-columns:repeat(2,1fr);
-}
-
-.tool-cards{
-    grid-template-columns:1fr;
-}
-
-}
-
-/* Phones */
-@media (max-width:768px){
-
-.wrap{
-    padding:0 18px;
-}
-
-.hero{
-    padding:130px 0 70px;
-}
-
-.hero h1{
-    font-size:2.5rem;
-    line-height:1.15;
-}
-
-.section-title{
-    font-size:2rem;
-}
-
-.section-sub{
-    margin-bottom:35px;
-}
-
-.hero-card{
-    padding:25px;
-}
-
-.hero-card .big{
-    font-size:2.4rem;
-}
-
-.mini-stats{
-    grid-template-columns:1fr;
-}
-
-.stat-grid{
-    grid-template-columns:1fr;
-}
-
-.gallery-grid{
-    grid-template-columns:1fr;
-}
-
-.month-grid{
-    grid-template-columns:1fr;
-}
-
-.skills-grid{
-    grid-template-columns:1fr;
-}
-
-.proof-group-header{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:8px;
-}
-
-.proof-group-count{
-    margin-left:0;
-}
-
-.contact-links{
-    width:100%;
-}
-
-.contact-item{
-    width:100%;
-}
-
-.overview p{
-    font-size:1rem;
-}
-
-.timeline{
-    padding-left:24px;
-}
-
-.t-item::before{
-    left:-28px;
-}
-
-}
-
-/* Small Phones */
-@media (max-width:480px){
-
-html{
-    font-size:15px;
-}
-
-.wrap{
-    padding:0 15px;
-}
-
-.nav-inner{
-    padding:15px;
-}
-
-.brand{
-    font-size:1rem;
-}
-
-.hero{
-    padding-top:110px;
-}
-
-.hero h1{
-    font-size:2rem;
-}
-
-.hero-desc{
-    font-size:.92rem;
-}
-
-.tag{
-    font-size:.65rem;
-    padding:7px 10px;
-}
-
-.hero-card{
-    border-radius:18px;
-}
-
-.hero-card .big{
-    font-size:2rem;
-}
-
-.stat-cell{
-    padding:22px 18px;
-}
-
-.month-card{
-    padding:20px;
-}
-
-.shot-body{
-    padding:16px;
-}
-
-.tool-card{
-    padding:22px;
-}
-
-.contact-item{
-    padding:15px;
-}
-
-.contact-item span{
-    font-size:14px;
-}
-
-.lightbox-nav{
-    width:34px;
-    height:34px;
-}
-
-}
-
-/* Extra Small Devices */
-@media (max-width:360px){
-
-.hero h1{
-    font-size:1.8rem;
-}
-
-.section-title{
-    font-size:1.7rem;
-}
-
-.hero-card .big{
-    font-size:1.8rem;
-}
-
-.tag{
-    font-size:.6rem;
-}
-
-.nav-links{
-    padding:15px;
-}
-
-}
-
-  /* ---------- skills ---------- */
-  .skills-grid{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:16px;
-  }
-  @media (max-width: 860px){ .skills-grid{ grid-template-columns:repeat(2,1fr); } }
-  .skill-pill{
-    background:var(--surface);
-    border:1px solid var(--line);
-    border-radius:16px;
-    padding:20px 18px;
-    display:flex;
-    align-items:center;
-    gap:12px;
-    transition:border-color .2s ease, transform .2s ease;
-  }
-  .skill-pill:hover{ border-color:var(--cherry); transform:translateY(-3px); }
-  .skill-pill .ic{ font-size:1.3rem; }
-  .skill-pill span{ font-size:0.88rem; font-weight:500; }
-
-  .tool-cards{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:22px;
-    margin-top:40px;
-  }
-  @media (max-width: 700px){ .tool-cards{ grid-template-columns:1fr; } }
-  .tool-card{
-    background:linear-gradient(160deg, var(--surface), var(--blush-deep));
-    border:1px solid var(--line);
-    border-radius:20px;
-    padding:30px 28px;
-  }
-  .tool-card .ic{ font-size:1.6rem; }
-  .tool-card h4{ font-family:var(--display); margin:12px 0 8px; font-size:1.15rem; }
-  .tool-card p{ font-size:0.88rem; color:var(--plum-soft); }
-
-  /* ---------- footer ---------- */
-  footer{
-    background:var(--plum);
-    color:#fdeef1;
-    padding:70px 0 40px;
-    margin-top:60px;
-  }
-  footer .wrap{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    gap:18px;
-  }
-  footer .brand{ color:#fff; font-size:1.4rem; }
-  footer .brand .dot{ color:#ff9db3; }
-  footer p{ color:#d9b7c2; font-size:0.85rem; max-width:420px; }
-  footer .foot-note{
-    font-family:var(--mono);
-    font-size:0.7rem;
-    letter-spacing:0.06em;
-    color:#a8778a;
-    margin-top:24px;
-  }
-
-  /* ---------- reveal on scroll ---------- */
-  .reveal{
-    opacity:0;
-    transform:translateY(24px);
-    transition:opacity .7s ease, transform .7s ease;
-  }
-  .reveal.in{ opacity:1; transform:translateY(0); }
-
-  /* skip-link for keyboard users */
-  .skip-link{
-    position:absolute; left:-999px; top:0;
-    background:var(--cherry); color:#fff;
-    padding:10px 16px; border-radius:0 0 10px 0;
-    z-index:300;
-  }
-  .skip-link:focus{ left:0; }
-
-  :focus-visible{ outline:2px solid var(--cherry); outline-offset:3px; }
-
-  @media (prefers-reduced-motion: reduce){
-    .reveal{ opacity:1; transform:none; transition:none; }
-    html{ scroll-behavior:auto; }
-    .shot-frame img{ transition:none; }
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<a class="skip-link" href="#proof">Skip to proof of results</a>
+<a class="skip" href="#experience">Skip to experience</a>
 
-<header class="nav">
-  <div class="nav-inner">
-    <div class="brand">Nouran Salah<span class="dot">.</span></div>
-    <nav class="nav-links" id="navLinks">
-      <a href="#results">Results</a>
-      <a href="#proof">Proof</a>
-      <a href="#campaigns">Campaigns</a>
-      <a href="#strategy">Strategy</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact Me</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true">NS</span>Nouran Salah</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#egurus">E-Gurus</a></li>
+        <li><a href="#cherry">Cherry &amp; Brush</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#proof">Screenshots</a></li>
+      </ul>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <a class="btn hot sm" href="#contact">Contact me</a>
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
+<main id="top">
+<!-- HERO -->
+<section class="hero" id="hero">
   <div class="wrap hero-grid">
-    <div class="reveal in">
-      <div class="eyebrow">
-        <span class="avatar-slot"><img src="images/headshot.jpg" alt="" onerror="this.parentElement.textContent='N'"></span>
-        Media Buyer · Performance Marketing
+    <div>
+      <div class="who">
+        <div class="photo" data-media="photo" data-kind="photo"></div>
+        <div>
+          <span class="live"><i aria-hidden="true"></i>Senior Media Buyer at E-Gurus</span>
+          <p style="margin-top:8px;color:var(--hero-muted);font-size:.95rem">E-commerce media buyer · Masr El Gedida, Cairo</p>
+        </div>
       </div>
-      <h1>Driving growth through<br><em>data-led</em> paid media</h1>
-      <p class="hero-desc">
-        Managing multi-channel paid campaigns across Meta and Google for
-        Cherry &amp; Brush — an Egyptian beauty &amp; hair-care brand —
-        from November 2025 to May 2026.
-      </p>
-      <div class="hero-tags">
-        <span class="tag">Meta Ads</span>
-        <span class="tag">Shopify Analytics</span>
-        <span class="tag">EGP Market</span>
-        <span class="tag">6-Month Track Record</span>
+      <h1>Ads that turn spend into <span class="hl">e-commerce revenue</span>.</h1>
+      <p class="sub" data-edit="hero-sub">Senior Media Buyer at the <b>E-Gurus</b> agency. Before that, <b>one year at Cherry &amp; Brush</b>, where the store reached <b>EGP 35.5M in a single month</b> and March sales grew 327%.</p>
+      <div class="actions">
+        <a class="btn hot" href="#experience">See my results</a>
+        <a class="btn ghost" href="#proof">View the screenshots</a>
       </div>
+      <div class="platforms" aria-label="Ad platforms"><span class="k">Platforms</span><span>Meta</span><span>Google</span><span>YouTube</span><span>TikTok</span><span>Snapchat</span><span>Shopify</span></div>
     </div>
 
-    <div class="hero-card reveal in">
-      <div class="cap">Peak Monthly Gross Sales</div>
-      <div class="big">EGP 17.46M</div>
-      <div class="delta">↑ +327% vs prior period</div>
-      <hr>
-      <div class="mini-stats">
-        <div><span>4,501</span><small>Peak monthly orders</small></div>
-        <div><span>9.7×</span><small>Best campaign ROAS</small></div>
-        <div><span>1.41%</span><small>Peak conv. rate</small></div>
-        <div><span>44</span><small>Campaigns managed</small></div>
-      </div>
+    <div class="hero-side">
+      <aside class="panel" aria-label="Career totals">
+        <div class="panel-head"><span>CAREER TOTALS</span><span>Sep 2025 – Oct 2026</span></div>
+        <div class="totals">
+          <div><b class="tab">EGP 2.2M+</b><span>Ad spend managed and tracked</span></div>
+          <div><b class="tab">4,600+</b><span>Purchases from my campaigns</span></div>
+          <div><b class="tab">9.7x</b><span>Best campaign ROAS</span></div>
+          <div><b class="tab">EGP 35.5M</b><span>Best store month</span></div>
+        </div>
+      </aside>
     </div>
   </div>
 </section>
 
-<div class="stem-divider">
-  <svg viewBox="0 0 120 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10 4 C 40 4, 40 30, 60 30 C 80 30, 80 4, 110 4" stroke="#c23a5e" stroke-width="1.4" stroke-dasharray="1 7" stroke-linecap="round"/>
-    <circle cx="60" cy="30" r="4.5" fill="#c23a5e"/>
-    <circle cx="52" cy="24" r="3.5" fill="#c79b4b"/>
-  </svg>
-</div>
-
-<!-- ================= OVERVIEW ================= -->
-<section class="overview">
-  <div class="wrap reveal">
-    <p>“Aggregated from six months of live Shopify store data and Meta
-    campaign reporting — every figure below is a real number, pulled
-    directly from the accounts I manage.”</p>
-  </div>
-</section>
-
-<!-- ================= RESULTS ================= -->
-<section id="results">
+<!-- ABOUT -->
+<section id="about">
   <div class="wrap">
-    <div class="eyebrow reveal">Performance Overview</div>
-    <h2 class="section-title reveal">Key results across all periods</h2>
-    <p class="section-sub reveal">Aggregated from Shopify store data and Meta campaign reporting, November 2025 – May 2026.</p>
-
-    <div class="stat-grid reveal">
-      <div class="stat-cell">
-        <div class="num">EGP 17.46M</div>
-        <div class="label">Peak monthly gross sales</div>
-        <div class="delta">↑ +327% vs prior</div>
+    <p class="eyebrow">About me</p>
+    <div class="about">
+      <div>
+        <p class="big" data-edit="about-text">Performance-driven digital marketer with experience in media buying, Shopify e-commerce management and campaign optimization. I use data analysis, conversion optimization and AI tools to make marketing more efficient and grow the business.</p>
+        <p class="lead" data-edit="about-more">My work since 2023 has covered e-commerce brands, an agency, a consultancy and real estate lead generation, starting from community management on social media.</p>
       </div>
-      <div class="stat-cell">
-        <div class="num">4,501</div>
-        <div class="label">Peak monthly orders</div>
-        <div class="delta">↑ +298% vs prior</div>
-      </div>
-      <div class="stat-cell">
-        <div class="num">EGP 35.5M</div>
-        <div class="label">Nov 2025 gross sales</div>
-        <div class="delta">↑ +3.4% MoM</div>
-      </div>
-      <div class="stat-cell">
-        <div class="num">9.7×</div>
-        <div class="label">Best campaign ROAS</div>
-        <div class="delta">Ns_Ramdanoffers</div>
-      </div>
-      <div class="stat-cell">
-        <div class="num">EGP 1.6M+</div>
-        <div class="label">Total ad spend tracked</div>
-        <div class="delta">Across 44 campaigns</div>
-      </div>
-      <div class="stat-cell">
-        <div class="num">2,100+</div>
-        <div class="label">Total tracked purchases</div>
-        <div class="delta">Conversion events</div>
-      </div>
-      <div class="stat-cell">
-        <div class="num">1.41%</div>
-        <div class="label">Peak conversion rate</div>
-        <div class="delta">↑ +75% vs prior</div>
-      </div>
-      <div class="stat-cell">
-        <div class="num">EGP 2,848</div>
-        <div class="label">May 2026 avg order value</div>
-        <div class="delta">↑ +6% MoM</div>
-      </div>
+      <aside class="watch">
+        <h3>KPIs I report on</h3>
+        <div class="chips"><span>ROAS</span><span>CPA</span><span>CTR</span><span>CVR</span><span>CPL</span><span>CPM</span><span>AOV</span><span>CPP</span></div>
+        <p class="ai" data-edit="about-ai"><b>AI in my workflow.</b> I use AI tools and AI agents for marketing automation, reporting and creative ideas.</p>
+      </aside>
     </div>
+    <div class="media" data-media="about"></div>
   </div>
 </section>
 
-<div class="stem-divider">
-  <svg viewBox="0 0 120 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10 4 C 40 4, 40 30, 60 30 C 80 30, 80 4, 110 4" stroke="#c23a5e" stroke-width="1.4" stroke-dasharray="1 7" stroke-linecap="round"/>
-    <circle cx="60" cy="30" r="4.5" fill="#c23a5e"/>
-    <circle cx="52" cy="24" r="3.5" fill="#c79b4b"/>
-  </svg>
-</div>
-
-<!-- ================= PROOF OF RESULTS / IMAGES ================= -->
-<section id="proof">
+<!-- EXPERIENCE -->
+<section id="experience">
   <div class="wrap">
-    <div class="eyebrow reveal">Proof of Results</div>
-    <h2 class="section-title reveal">Live dashboard screenshots</h2>
-    <p class="section-sub reveal">Captured directly from Shopify Admin and Meta Ads Manager — real numbers, real accounts. Grouped by source below; click any screenshot to view it full-size.</p>
+    <p class="eyebrow">Experience</p>
+    <h2 style="margin-top:12px">Where I've run campaigns</h2>
+    <p class="lead" data-edit="exp-lead">Most recent first. The two main roles link to case studies with the full numbers.</p>
 
-    <!-- ---- GROUP 1: SHOPIFY ---- -->
-    <div class="proof-group">
-      <div class="proof-group-header reveal">
-        <span class="platform-badge shopify">🛍️ Shopify Admin</span>
-        <h3>Store performance</h3>
-        <span class="proof-group-count">5 screenshots</span>
-      </div>
+    <div class="roles">
+      <article class="role eg">
+        <div class="role-top">
+          <div><span class="tag eg">Current role</span><h3>E-Gurus Agency</h3><p class="where">Senior Media Buyer · Client: 40dash store</p></div>
+          <p class="when">Aug 2026 – Present<small>Agency</small></p>
+        </div>
+        <ul>
+          <li data-edit="eg-b1">Build targeted campaigns across Meta, Google, YouTube, TikTok and Snapchat.</li>
+          <li data-edit="eg-b2">Lifted store conversion rate 26%, from Shopify data for 1 Aug to 14 Oct.</li>
+          <li data-edit="eg-b3">Optimize continuously to cut CPA, and manage content calendars for brand consistency.</li>
+        </ul>
+        <div class="mini">
+          <div><b>4.0x</b><span>Blended ROAS</span></div>
+          <div><b>2,589</b><span>Purchases</span></div>
+          <div><b>EGP 189</b><span>Best cost per purchase</span></div>
+        </div>
+        <a class="go" href="#egurus">Read the E-Gurus case study ↓</a>
+      </article>
 
-      <div class="gallery-grid" data-group="shopify">
-
-        <figure class="shot reveal" data-group="shopify">
-          <button class="shot-frame" data-full="pink-friday.png" data-caption="Pink Friday Peak" data-meta="Conv. rate 1.16% · Gross sales EGP 35.51M (+3.4%) · Orders 12.9K · AOV EGP 2,347">
-            <img src="pink-friday.png" alt="Shopify dashboard — Pink Friday Peak" onerror="this.style.display='none'">
-            <div class="placeholder"><span class="ic"></span></div>
-            <span class="zoom-hint">⤢</span>
-          </button>
-          <figcaption class="shot-body">
-            <div class="tag-sm">Nov 1–30, 2025</div>
-            <h4>Pink Friday Peak</h4>
-            <p>Conv. rate 1.16% · Gross sales EGP 35.51M (+3.4%) · Orders 12.9K · AOV EGP 2,347</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot reveal" data-group="shopify">
-          <button class="shot-frame" data-full="mothers-day.png" data-caption="Mother's Day Surge" data-meta="Conv. rate 1.41% (+75%) · Gross sales EGP 17.46M (+327%) · Orders 4,501 (+298%) · AOV EGP 2,592">
-            <img src="mothers-day.png" alt="Shopify dashboard — Mother's Day Surge" onerror="this.style.display='none'">
-            <div class="placeholder"><span class="ic"></span></div>
-            <span class="zoom-hint">⤢</span>
-          </button>
-          <figcaption class="shot-body">
-            <div class="tag-sm">Mar 1–31, 2026</div>
-            <h4>Mother's Day Surge</h4>
-            <p>Conv. rate 1.41% (+75%) · Gross sales EGP 17.46M (+327%) · Orders 4,501 (+298%) · AOV EGP 2,592</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot reveal" data-group="shopify">
-          <button class="shot-frame" data-full="traffic-view.png" data-caption="Traffic View" data-meta="Sessions 288.4K (+154%) · Gross sales EGP 17.46M (+327%) · Orders 4,501 (+298%)">
-            <img src="traffic-view.png" alt="Shopify dashboard — Traffic View" onerror="this.style.display='none'">
-            <div class="placeholder"><span class="ic"></span></div>
-            <span class="zoom-hint">⤢</span>
-          </button>
-          <figcaption class="shot-body">
-            <div class="tag-sm">Mar 1–31, 2026 · Sessions</div>
-            <h4>Traffic View</h4>
-            <p>Sessions 288.4K (+154%) · Gross sales EGP 17.46M (+327%) · Orders 4,501 (+298%)</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot reveal" data-group="shopify">
-          <button class="shot-frame" data-full="recovery-month.png" data-caption="Recovery Month" data-meta="Conv. rate 0.92% · Gross sales EGP 11.98M (+52%) · Orders 2,522 (+28%) · AOV EGP 2,848 (+6%)">
-            <img src="recovery-month.png" alt="Shopify dashboard — Recovery Month" onerror="this.style.display='none'">
-            <div class="placeholder"><span class="ic"></span></div>
-            <span class="zoom-hint">⤢</span>
-          </button>
-          <figcaption class="shot-body">
-            <div class="tag-sm">May 1–31, 2026</div>
-            <h4>Recovery Month</h4>
-            <p>Conv. rate 0.92% · Gross sales EGP 11.98M (+52%) · Orders 2,522 (+28%) · AOV EGP 2,848 (+6%)</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot reveal" data-group="shopify">
-          <button class="shot-frame" data-full="post-event-dip.png" data-caption="Post-Event Dip" data-meta="Conv. rate 1.16% · Gross sales EGP 7.38M (−57%) · Orders 1,847 · AOV EGP 2,688 (+3%)">
-            <img src="post-event-dip.png" alt="Shopify dashboard — Post-Event Dip" onerror="this.style.display='none'">
-            <div class="placeholder"><span class="ic"></span></div>
-            <span class="zoom-hint">⤢</span>
-          </button>
-          <figcaption class="shot-body">
-            <div class="tag-sm">Apr 1–30, 2026</div>
-            <h4>Post-Event Dip</h4>
-            <p>Conv. rate 1.16% · Gross sales EGP 7.38M (−57%) · Orders 1,847 · AOV EGP 2,688 (+3%)</p>
-          </figcaption>
-        </figure>
-
-      </div>
+      <article class="role cb">
+        <div class="role-top">
+          <div><span class="tag cb">Previous role</span><h3>Cherry &amp; Brush</h3><p class="where">E-commerce Media Buyer · Beauty and hair care</p></div>
+          <p class="when">Sep 2025 – Aug 2026<small>1 year, in-house</small></p>
+        </div>
+        <ul>
+          <li data-edit="cb-b1">Planned, launched and optimized 44 campaigns on Facebook, Instagram, TikTok and Snapchat.</li>
+          <li data-edit="cb-b2">Ran A/B tests on targeting, creative and bidding, tracking ROAS, CTR, CPA and conversion rate.</li>
+          <li data-edit="cb-b3">Fed data insights to the creative team. UGC became the strongest format, up to 7.5x ROAS.</li>
+        </ul>
+        <div class="mini">
+          <div><b>EGP 35.5M</b><span>Best store month</span></div>
+          <div><b>+327%</b><span>March sales growth</span></div>
+          <div><b>5.6x</b><span>ROAS, top 10</span></div>
+        </div>
+        <a class="go" href="#cherry">Read the Cherry &amp; Brush case study ↓</a>
+      </article>
     </div>
 
-    <div class="stem-divider mini">
-      <svg viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 3 C 26 3, 26 20, 40 20 C 54 20, 54 3, 74 3" stroke="#c79b4b" stroke-width="1.3" stroke-dasharray="1 6" stroke-linecap="round"/>
-        <circle cx="40" cy="20" r="3.2" fill="#c79b4b"/>
-      </svg>
+    <div class="earlier">
+      <h3>Earlier and side experience</h3>
+      <ul class="etl">
+        <li class="ph">
+          <p class="when">Apr 2025 – Present</p>
+          <h4>Philstia Consultant</h4>
+          <p class="where">Media Buyer</p>
+          <ul>
+            <li data-edit="ph-b1">Targeted campaigns across Meta, Google, YouTube, TikTok and Snapchat.</li>
+            <li data-edit="ph-b2">Managed content calendars and kept the brand consistent.</li>
+            <li data-edit="ph-b3">Ongoing optimization to raise performance and reduce CPA.</li>
+          </ul>
+        </li>
+        <li class="ak">
+          <p class="when">Freelance</p>
+          <h4>Al Khalil Development</h4>
+          <p class="where">Media Buyer · Real estate lead generation</p>
+          <ul>
+            <li data-edit="ak-b1">Created and tested ad creatives and copy to improve lead quality.</li>
+            <li data-edit="ak-b2">Tracked CPL, CTR and conversions to improve ROI.</li>
+            <li data-edit="ak-b3">Prepared performance reports with recommendations.</li>
+          </ul>
+        </li>
+        <li class="sm">
+          <p class="when">2023 – 2024</p>
+          <h4>Social Media Moderator</h4>
+          <p class="where">Freelance · Multiple platforms</p>
+          <ul>
+            <li data-edit="sm-b1">Managed online communities across several platforms.</li>
+            <li data-edit="sm-b2">Gave timely, professional replies to customer questions.</li>
+            <li data-edit="sm-b3">Handled crisis situations and protected brand reputation.</li>
+          </ul>
+        </li>
+      </ul>
     </div>
-
-    <!-- ---- GROUP 2: META ADS ---- -->
-    <div class="proof-group">
-      <div class="proof-group-header reveal">
-        <span class="platform-badge meta">📢 Meta Ads Manager</span>
-        <h3>Campaign dashboards</h3>
-        <span class="proof-group-count">5 screenshots</span>
-      </div>
-
-      <div class="gallery-grid" data-group="meta">
-
-        <figure class="shot meta reveal" data-group="meta">
-          <button class="shot-frame" data-full="meta-cbo-cairo.jfif" data-caption="C&amp;B-Cairo · CBO Campaigns" data-meta="CBO Aliaa Awe: 753 purchases, EGP 195 CPP, EGP 146K spent · BF-ABO-GenZ: 108 purchases, EGP 385 CPP">
-            <img src="meta-cbo-cairo.jfif" alt="Meta Ads Manager — C&B-Cairo CBO Campaigns" onerror="this.style.display='none'">
-            <div class="placeholder"><span class="ic"></span></div>
-            <span class="zoom-hint">⤢</span>
-          </button>
-          <figcaption class="shot-body">
-            <div class="tag-sm">Meta Ads Manager</div>
-            <h4>C&amp;B-Cairo · CBO Campaigns</h4>
-            <p>CBO Aliaa Awe: 753 purchases, EGP 195 CPP, EGP 146K spent · BF-ABO-GenZ: 108 purchases, EGP 385 CPP</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot meta reveal" data-group="meta">
-          <button class="shot-frame" data-full="meta-dec-2025.jfif" data-caption="Cherry &amp; B · Dec 2025" data-meta="Broad DEC1: 131 purchases, EGP 345 CPP, EGP 45K spent · CTA ABO DEC4: 971 purchases, EGP 221 CPP, EGP 214K spent">
-            <img src="meta-dec-2025.jfif" alt="Meta Ads Manager — Cherry & B Dec 2025" onerror="this.style.display='none'">
-            <div class="placeholder"><span class="ic"></span></div>
-            <span class="zoom-hint">⤢</span>
-          </button>
-          <figcaption class="shot-body">
-            <div class="tag-sm">Meta Ads Manager</div>
-            <h4>Cherry &amp; B · Dec 2025</h4>
-            <p>Broad DEC1: 131 purchases, EGP 345 CPP, EGP 45K spent · CTA ABO DEC4: 971 purchases, EGP 221 CPP, EGP 214K spent</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot meta reveal" data-group="meta">
-          <button class="shot-frame" data-full="meta-nov-2025.jfif" data-caption="Cherry &amp; B · Nov 2025" data-meta="Broad NOV28: 567 purchases, EGP 359 CPP, EGP 203K spent · ABO NOV3: 568 purchases, EGP 386 CPP, EGP 219K spent">
-            <img src="meta-nov-2025.jfif" alt="Meta Ads Manager — Cherry & B Nov 2025" onerror="this.style.display='none'">
-            <div class="placeholder"><span class="ic"></span></div>
-            <span class="zoom-hint">⤢</span>
-          </button>
-          <figcaption class="shot-body">
-            <div class="tag-sm">Meta Ads Manager</div>
-            <h4>Cherry &amp; B · Nov 2025</h4>
-            <p>Broad NOV28: 567 purchases, EGP 359 CPP, EGP 203K spent · ABO NOV3: 568 purchases, EGP 386 CPP, EGP 219K spent</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot meta reveal" data-group="meta">
-          <button class="shot-frame" data-full="meta-oct-nov-2025.jfif" data-caption="Cherry &amp; B · Oct–Nov 2025" data-meta="Aliaa Nov19: 188 purchases · Retargeting: 242 purchases, EGP 364 CPP · Broad Oct31: 392 purchases">
-            <img src="meta-oct-nov-2025.jfif" alt="Meta Ads Manager — Cherry & B Oct–Nov 2025" onerror="this.style.display='none'">
-            <div class="placeholder"><span class="ic"></span></div>
-            <span class="zoom-hint">⤢</span>
-          </button>
-          <figcaption class="shot-body">
-            <div class="tag-sm">Meta Ads Manager</div>
-            <h4>Cherry &amp; B · Oct–Nov 2025</h4>
-            <p>Aliaa Nov19: 188 purchases · Retargeting: 242 purchases, EGP 364 CPP · Broad Oct31: 392 purchases</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot meta reveal" data-group="meta">
-          <button class="shot-frame" data-full="meta-abo-cairo.jfif" data-caption="C&amp;B-Cairo · ABO Campaigns" data-meta="ABO Aliaa awi 28-11: 358 purchases, EGP 267 CPP · ADv-Retargeting: 214 purchases, EGP 123 CPP · ADV+Catalog: 106 purchases">
-            <img src="meta-abo-cairo.jfif" alt="Meta Ads Manager — C&B-Cairo ABO Campaigns" onerror="this.style.display='none'">
-            <div class="placeholder"><span class="ic"></span></div>
-            <span class="zoom-hint">⤢</span>
-          </button>
-          <figcaption class="shot-body">
-            <div class="tag-sm">Meta Ads Manager</div>
-            <h4>C&amp;B-Cairo · ABO Campaigns</h4>
-            <p>ABO Aliaa awi 28-11: 358 purchases, EGP 267 CPP · ADv-Retargeting: 214 purchases, EGP 123 CPP · ADV+Catalog: 106 purchases</p>
-          </figcaption>
-        </figure>
-
-      </div>
-    </div>
-
+    <div class="media" data-media="experience"></div>
   </div>
 </section>
 
-<div class="stem-divider">
-  <svg viewBox="0 0 120 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10 4 C 40 4, 40 30, 60 30 C 80 30, 80 4, 110 4" stroke="#c23a5e" stroke-width="1.4" stroke-dasharray="1 7" stroke-linecap="round"/>
-    <circle cx="60" cy="30" r="4.5" fill="#c23a5e"/>
-    <circle cx="52" cy="24" r="3.5" fill="#c79b4b"/>
-  </svg>
-</div>
-
-<!-- ================= MONTH BY MONTH ================= -->
-<section id="monthly">
+<!-- E-GURUS CASE -->
+<section id="egurus" class="case eg" style="background:var(--surface)">
   <div class="wrap">
-    <div class="eyebrow reveal">Month-by-Month</div>
-    <h2 class="section-title reveal">Shopify store performance</h2>
-    <p class="section-sub reveal">Percentage deltas vs. the prior comparable period.</p>
+    <div class="case-head">
+      <span class="tag eg">E-Gurus · Current</span>
+      <h2>Case study: 40dash at E-Gurus</h2>
+      <p class="lead" data-edit="eg-lead">Aug to Oct 2026. Store numbers come from Shopify (all channels). Campaign numbers come from Meta Ads Manager, 1 August to 1 October 2026.</p>
+    </div>
 
-    <div class="month-grid">
-      <div class="month-card reveal">
-        <div class="tag-sm">Nov 1–30, 2025 · Pink Friday Peak</div>
-        <h4>Nov 2025</h4>
-        <div class="sales">EGP 35.5M</div>
-        <div class="row"><span>Orders</span><span>12,900</span></div>
-        <div class="row"><span>Sales growth</span><span>+3.4%</span></div>
-        <div class="row"><span>Avg order value</span><span>EGP 2,347</span></div>
+    <div class="kpis">
+      <div class="kpi"><b>4.0x</b><span>Blended ROAS, 3 main campaigns</span><small>EGP 629K spend returned EGP 2.49M</small></div>
+      <div class="kpi"><b>2,589</b><span>Purchases</span><small>About EGP 243 per purchase on average</small></div>
+      <div class="kpi"><b>5.16x</b><span>Best ROAS: catalog campaign</span><small>EGP 189 per purchase on EGP 75K spend</small></div>
+      <div class="kpi"><b>+26%</b><span>Store conversion rate</span><small>3.47% for 1 Aug to 14 Oct vs prior period</small></div>
+    </div>
+
+    <div class="subhead"><div><h3>Conversion rate up 26%</h3><p>Store conversion rate from Shopify, with the change vs the prior period.</p></div></div>
+    <div class="two">
+      <div class="card">
+        <div class="cr" role="img" aria-label="Conversion rate: August 2026 3.25 percent, up 6 percent; September 2026 3.73 percent, up 14 percent; 1 August to 14 October 3.47 percent, up 26 percent">
+          <div class="crow"><span>Aug 2026</span><div class="ctrack"><i style="width:81.3%"></i></div><b>3.25%</b><span class="up">+6%</span></div>
+          <div class="crow"><span>Sep 2026</span><div class="ctrack"><i style="width:93.3%"></i></div><b>3.73%</b><span class="up">+14%</span></div>
+          <div class="crow total"><span>1 Aug – 14 Oct</span><div class="ctrack"><i style="width:86.8%"></i></div><b>3.47%</b><span class="up">+26%</span></div>
+          <div class="caxis" aria-hidden="true"><span></span><div><span>0%</span><span>2%</span><span>4%</span></div><span></span><span></span></div>
+        </div>
+        <div class="insight"><b>What this shows</b><p data-edit="eg-insight2">Conversion rate rose in every period: +6% in August, +14% in September and +26% across 1 Aug to 14 Oct.</p></div>
       </div>
-      <div class="month-card reveal">
-        <div class="tag-sm">Mar 1–31, 2026 · Mother's Day Surge</div>
-        <h4>Mar 2026</h4>
-        <div class="sales">EGP 17.46M</div>
-        <div class="row"><span>Orders</span><span>4,501</span></div>
-        <div class="row"><span>Sales growth</span><span>+327%</span></div>
-        <div class="row"><span>Conv. rate</span><span>1.41%</span></div>
-      </div>
-      <div class="month-card reveal">
-        <div class="tag-sm">Apr 1–30, 2026 · Post-Event Dip</div>
-        <h4>Apr 2026</h4>
-        <div class="sales">EGP 7.38M</div>
-        <div class="row"><span>Orders</span><span>1,847</span></div>
-        <div class="row"><span>vs prior</span><span>−57%</span></div>
-        <div class="row"><span>Avg order value</span><span>EGP 2,688</span></div>
-      </div>
-      <div class="month-card reveal">
-        <div class="tag-sm">May 1–31, 2026 · Recovery Momentum</div>
-        <h4>May 2026</h4>
-        <div class="sales">EGP 11.98M</div>
-        <div class="row"><span>Orders</span><span>2,522</span></div>
-        <div class="row"><span>Sales growth</span><span>+52%</span></div>
-        <div class="row"><span>Avg order value</span><span>EGP 2,848</span></div>
+      <div class="tablewrap">
+        <table style="min-width:0">
+          <thead><tr><th>Period</th><th class="num">Conv. rate</th><th class="num">vs prior period</th></tr></thead>
+          <tbody>
+            <tr><td>Aug 2026</td><td class="num">3.25%</td><td class="num up">+6%</td></tr>
+            <tr><td>Sep 2026</td><td class="num">3.73%</td><td class="num up">+14%</td></tr>
+            <tr><td>1 Aug – 14 Oct 2026</td><td class="num"><b>3.47%</b></td><td class="num up">+26%</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
+
+    <div class="subhead"><div><h3>Meta campaigns</h3><p>Three campaigns with different jobs: scale, efficiency and a new product test. Open one for its numbers.</p></div></div>
+    <div class="camps" id="eg-camps"></div>
+    <div class="media" data-media="egurus"></div>
   </div>
 </section>
 
-<!-- ================= CAMPAIGNS ================= -->
-<section id="campaigns">
+<!-- CHERRY & BRUSH CASE -->
+<section id="cherry" class="case cb">
   <div class="wrap">
-    <div class="eyebrow reveal">Meta Ads · Campaign Reporting</div>
-    <h2 class="section-title reveal">Top campaigns by purchases</h2>
-    <p class="section-sub reveal">From exported campaign CSV, sorted by total purchases. ROAS = conversion value ÷ spend.</p>
-
-    <div class="table-wrap reveal">
-      <table>
-        <thead>
-          <tr>
-            <th>Campaign</th><th>Period</th><th>Purchases</th><th>Spend (EGP)</th><th>Conv. Value</th><th>ROAS</th><th>CPP (EGP)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>ABO_reminder_23/12</td><td>Dec–Jan</td><td>435</td><td>206,841</td><td>1,002,018</td><td class="roas">4.8×</td><td>475.5</td></tr>
-          <tr><td>CBO-Installments-Nour</td><td>Nov–Dec</td><td>277</td><td>129,473</td><td>734,416</td><td class="roas">5.7×</td><td>467.4</td></tr>
-          <tr><td>MotherDay UGC (Nour)</td><td>Mar–Apr</td><td>306</td><td>111,600</td><td>762,280</td><td class="roas">6.8×</td><td>364.7</td></tr>
-          <tr><td>ABO-4product-pinkfriday</td><td>Oct–Dec</td><td>156</td><td>74,659</td><td>436,226</td><td class="roas">5.8×</td><td>478.6</td></tr>
-          <tr><td>CBO November shoot (Nour)</td><td>Nov–Dec</td><td>145</td><td>70,369</td><td>396,021</td><td class="roas">5.6×</td><td>485.3</td></tr>
-          <tr><td>Ns_Motherday10/3</td><td>Mar–Apr</td><td>120</td><td>67,955</td><td>355,280</td><td class="roas">5.2×</td><td>566.3</td></tr>
-          <tr><td>Nour_carousel16/3</td><td>Mar–Apr</td><td>64</td><td>36,296</td><td>186,950</td><td class="roas">5.1×</td><td>567.1</td></tr>
-          <tr><td>UGC-Existing1/1</td><td>Dec–Jan</td><td>50</td><td>16,375</td><td>122,617</td><td class="roas">7.5×</td><td>327.5</td></tr>
-          <tr><td>Ns_Ramdanoffers</td><td>Mar–Apr</td><td>42</td><td>16,078</td><td>155,249</td><td class="roas">9.7×</td><td>382.8</td></tr>
-          <tr><td>ABO-UGC-22/12</td><td>Dec–Jan</td><td>33</td><td>24,282</td><td>99,301</td><td class="roas">4.1×</td><td>735.8</td></tr>
-        </tbody>
-      </table>
+    <div class="case-head">
+      <span class="tag cb">Cherry &amp; Brush · Sep 2025 – Aug 2026</span>
+      <h2>Case study: Cherry &amp; Brush</h2>
+      <p class="lead" data-edit="cb-lead">One year of in-house media buying for an Egyptian beauty and hair-care brand. Store numbers come from Shopify and cover all sales. Campaign numbers come from Meta Ads Manager and cover only what Meta attributed to ads.</p>
     </div>
+
+    <div class="kpis">
+      <div class="kpi"><b>EGP 35.5M</b><span>Best month, store gross sales</span><small>Nov 2025 (Pink Friday), +3.4% vs prior period</small></div>
+      <div class="kpi"><b>+327%</b><span>March 2026 sales growth</span><small>EGP 17.46M during Ramadan and Mother's Day</small></div>
+      <div class="kpi"><b>5.6x</b><span>Blended ROAS, top 10 campaigns</span><small>EGP 754K spend returned EGP 4.25M</small></div>
+      <div class="kpi"><b>9.7x</b><span>Highest single-campaign ROAS</span><small>Ramadan offers, on EGP 16K</small></div>
+      <div class="kpi"><b>EGP 327</b><span>Lowest cost per purchase</span><small>UGC creative, Dec to Jan</small></div>
+      <div class="kpi"><b>44</b><span>Campaigns managed</span><small>Two ad accounts, EGP 1.6M+ tracked spend</small></div>
+    </div>
+
+    <div class="subhead"><div><h3>Store sales in the key months</h3><p>Gross sales from Shopify, with the change vs the prior period.</p></div></div>
+    <div class="two">
+      <div class="card">
+        <div class="vbars" role="img" aria-label="Gross sales: November 2025 EGP 35.51 million, March 2026 17.46 million, April 2026 7.38 million, May 2026 11.98 million">
+          <div class="vbar"><b>35.51M</b><i style="height:100%"></i></div>
+          <div class="vbar"><b>17.46M</b><i style="height:49.2%"></i></div>
+          <div class="vbar dim"><b>7.38M</b><i style="height:20.8%"></i></div>
+          <div class="vbar"><b>11.98M</b><i style="height:33.7%"></i></div>
+        </div>
+        <div class="vlabels">
+          <div>Nov 2025<span>Pink Friday</span><span class="up">+3.4%</span></div>
+          <div>Mar 2026<span>Ramadan, Mother's Day</span><span class="up">+327%</span></div>
+          <div>Apr 2026<span>After the events</span><span class="down">−57%</span></div>
+          <div>May 2026<span>Recovery</span><span class="up">+52%</span></div>
+        </div>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Month</th><th class="num">Orders</th><th class="num">Conv. rate</th><th class="num">Avg. order</th></tr></thead>
+          <tbody>
+            <tr><td>Nov 2025</td><td class="num">12,900</td><td class="num">1.16%</td><td class="num">EGP 2,347</td></tr>
+            <tr><td>Mar 2026<small>288.4K sessions (+154%)</small></td><td class="num">4,501<small class="up">+298%</small></td><td class="num">1.41%<small class="up">+75%</small></td><td class="num">EGP 2,592</td></tr>
+            <tr><td>Apr 2026</td><td class="num">1,847</td><td class="num">1.16%</td><td class="num">EGP 2,688<small class="up">+3%</small></td></tr>
+            <tr><td>May 2026</td><td class="num">2,522<small class="up">+28%</small></td><td class="num">0.92%</td><td class="num">EGP 2,848<small class="up">+6%</small></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="subhead">
+      <div><h3>Top 10 campaigns</h3><p>From the exported campaign data. ROAS is conversion value divided by spend.</p></div>
+      <div class="seg" role="group" aria-label="Arrange campaigns">
+        <button type="button" id="v-season" data-v="season" aria-pressed="true">By season</button>
+        <button type="button" id="v-roas" data-v="roas" aria-pressed="false">Best ROAS</button>
+        <button type="button" id="v-p" data-v="p" aria-pressed="false">Most purchases</button>
+        <button type="button" id="v-c" data-v="c" aria-pressed="false">Lowest CPP</button>
+      </div>
+    </div>
+    <div class="camps" id="cb-camps"></div>
+
+    <div class="subhead"><div><h3>Campaign timeline</h3><p>The six phases of the year, in order.</p></div></div>
+    <ol class="tl">
+      <li class="peak"><time>Oct – Nov 2025</time><h4>Pink Friday sale</h4><p data-edit="tl-1">Launched ABO and CBO structures with broad audiences, bundles and installment offers. November closed at EGP 35.5M.</p></li>
+      <li><time>Nov – Dec 2025</time><h4>New shoot and installments</h4><p data-edit="tl-2">Campaigns built on the November shoot and installment offers. Tested influencer creative in CBO and added retargeting.</p></li>
+      <li><time>Dec 2025 – Jan 2026</time><h4>Year-end push</h4><p data-edit="tl-3">Scaled the reminder campaign to 435 purchases and over EGP 1M in value. Launched UGC and micro-influencer campaigns.</p></li>
+      <li><time>Feb 2026</time><h4>Valentine's Day</h4><p data-edit="tl-4">Ran 8 campaigns testing urgency messaging, UGC, installment offers and video.</p></li>
+      <li class="peak"><time>Mar – Apr 2026</time><h4>Ramadan and Mother's Day</h4><p data-edit="tl-5">EGP 17.46M in March. Mother's Day UGC delivered 306 purchases at 6.8x and Ramadan offers reached 9.7x.</p></li>
+      <li><time>May – Aug 2026</time><h4>Recovery and optimization</h4><p data-edit="tl-6">Sales rebounded to EGP 11.98M (+52%) with a higher order value, across 9 active campaigns in both ad accounts.</p></li>
+    </ol>
+    <div class="media" data-media="cherry"></div>
   </div>
 </section>
 
-<div class="stem-divider">
-  <svg viewBox="0 0 120 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10 4 C 40 4, 40 30, 60 30 C 80 30, 80 4, 110 4" stroke="#c23a5e" stroke-width="1.4" stroke-dasharray="1 7" stroke-linecap="round"/>
-    <circle cx="60" cy="30" r="4.5" fill="#c23a5e"/>
-    <circle cx="52" cy="24" r="3.5" fill="#c79b4b"/>
-  </svg>
-</div>
-
-<!-- ================= STRATEGY TIMELINE ================= -->
-<section id="strategy">
+<!-- LEARNINGS -->
+<section id="learnings">
   <div class="wrap">
-    <div class="eyebrow reveal">Campaign Strategy</div>
-    <h2 class="section-title reveal">Seasonal campaign timeline</h2>
-    <p class="section-sub reveal">Key campaign phases managed throughout the engagement.</p>
-
-    <div class="timeline">
-      <div class="t-item reveal">
-        <div class="tag-sm">Oct – Nov 2025</div>
-        <h4>Pink Friday / Black Friday Campaigns</h4>
-        <p>Launched ABO and CBO structures for the Pink Friday sale. Managed the "Sales_pink friday" series across broad audiences with product bundles and installment offers. Drove EGP 35.5M in November gross sales.</p>
-      </div>
-      <div class="t-item reveal">
-        <div class="tag-sm">Nov – Dec 2025</div>
-        <h4>November Shoot + Installment Focus</h4>
-        <p>Ran CBO November shoot, CBO hot-air tri-dry, and installment-specific campaigns. Tested influencer creative via a CBO-Influencer structure. Implemented retargeting layers alongside prospecting to maximize CVR.</p>
-      </div>
-      <div class="t-item reveal">
-        <div class="tag-sm">Dec 2025 – Jan 2026</div>
-        <h4>Year-End Sales Push</h4>
-        <p>Scaled ABO_reminder to 435 purchases and EGP 1M+ conversion value. Launched UGC-focused creatives and micro-influencer ABO. Best CPP of EGP 327 on UGC-Existing.</p>
-      </div>
-      <div class="t-item reveal">
-        <div class="tag-sm">Feb 2026</div>
-        <h4>Valentine's Day Campaigns</h4>
-        <p>Ran 8 Valentine's campaigns including FOMO messaging, UGC content, installment offers, and video formats across multiple creative angles.</p>
-      </div>
-      <div class="t-item reveal">
-        <div class="tag-sm">Mar – Apr 2026</div>
-        <h4>Ramadan + Mother's Day Scale-Up</h4>
-        <p>Best ad period on record — EGP 17.46M in March (+327%). Mother's Day UGC hit 306 purchases at 6.8× ROAS. Ramadan offers achieved 9.7× ROAS on a lean EGP 16K spend.</p>
-      </div>
-      <div class="t-item reveal">
-        <div class="tag-sm">May – Jun 2026</div>
-        <h4>Recovery &amp; Optimization</h4>
-        <p>May rebounded to EGP 11.98M (+52% MoM) with an improved AOV of EGP 2,848. Currently managing 9 active campaigns across the Cherry and B, and C&amp;B-Cairo ad accounts.</p>
-      </div>
+    <p class="eyebrow">Insights</p>
+    <h2 style="margin-top:12px">What the numbers taught me</h2>
+    <p class="lead" data-edit="learn-lead">Patterns from comparing campaigns side by side, in both main roles.</p>
+    <div class="learn">
+      <article><span class="tag eg">E-Gurus</span><h3>Better buyers, not just more clicks</h3><p data-edit="l-1">At 40dash, conversion rate rose 26% across the period. I work on who sees the ads and where they land, so more visitors buy.</p></article>
+      <article><span class="tag eg">E-Gurus</span><h3>Catalog sets the efficiency bar</h3><p data-edit="l-2">The Advantage+ catalog campaign returned 5.16x at EGP 189 per purchase. I compare every creative-led campaign against it before adding budget.</p></article>
+      <article><span class="tag cb">Cherry &amp; Brush</span><h3>Volume and efficiency are different jobs</h3><p data-edit="l-3">The reminder campaign brought 435 purchases at 4.8x. Ramadan offers hit 9.7x on only 42. I use the first to scale and the second as a signal of what the market wants.</p></article>
+      <article><span class="tag cb">Cherry &amp; Brush</span><h3>UGC wins, with the right offer</h3><p data-edit="l-4">Two UGC campaigns returned 7.5x and 6.8x. A third returned 4.1x, so format alone isn't enough. Timing and offer matter as much.</p></article>
+      <article><span class="tag cb">Cherry &amp; Brush</span><h3>Plan for the week after the peak</h3><p data-edit="l-5">Pink Friday and Ramadan made the biggest months, then April fell 57%. I now plan the weeks after each event, not only the event.</p></article>
+      <article><span class="tag cb">Cherry &amp; Brush</span><h3>Bundles raise the basket</h3><p data-edit="l-6">Orders fell after March, but average order value climbed from EGP 2,592 to EGP 2,848 by May, helped by bundles and installment offers.</p></article>
     </div>
+    <div class="media" data-media="learnings"></div>
   </div>
 </section>
 
-<div class="stem-divider">
-  <svg viewBox="0 0 120 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10 4 C 40 4, 40 30, 60 30 C 80 30, 80 4, 110 4" stroke="#c23a5e" stroke-width="1.4" stroke-dasharray="1 7" stroke-linecap="round"/>
-    <circle cx="60" cy="30" r="4.5" fill="#c23a5e"/>
-    <circle cx="52" cy="24" r="3.5" fill="#c79b4b"/>
-  </svg>
-</div>
-
-<!-- ================= SKILLS ================= -->
+<!-- SKILLS -->
 <section id="skills">
   <div class="wrap">
-    <div class="eyebrow reveal">Capabilities</div>
-    <h2 class="section-title reveal">Skills &amp; tools</h2>
-    <p class="section-sub reveal">The day-to-day toolkit behind the numbers above.</p>
-
-    <div class="skills-grid">
-      <div class="skill-pill reveal"><span class="ic">📢</span><span>Meta Ads Manager</span></div>
-      <div class="skill-pill reveal"><span class="ic">🛍️</span><span>Shopify Analytics</span></div>
-      <div class="skill-pill reveal"><span class="ic">🎯</span><span>ABO / CBO Strategy</span></div>
-      <div class="skill-pill reveal"><span class="ic">🔁</span><span>Retargeting Funnels</span></div>
-      <div class="skill-pill reveal"><span class="ic">📊</span><span>Campaign Reporting</span></div>
-      <div class="skill-pill reveal"><span class="ic">📝</span><span>UGC Creative Testing</span></div>
-      <div class="skill-pill reveal"><span class="ic">💳</span><span>Installment Offers</span></div>
-      <div class="skill-pill reveal"><span class="ic">📈</span><span>ROAS Optimization</span></div>
-      <div class="skill-pill reveal"><span class="ic">🎬</span><span>Video Ad Formats</span></div>
-      <div class="skill-pill reveal"><span class="ic">🗂️</span><span>Seasonal Planning</span></div>
-      <div class="skill-pill reveal"><span class="ic">🔍</span><span>Audience Research</span></div>
-      <div class="skill-pill reveal"><span class="ic">⚡</span><span>Budget Scaling</span></div>
+    <p class="eyebrow">Skills</p>
+    <h2 style="margin-top:12px">Skills, each with proof</h2>
+    <p class="lead" data-edit="skills-lead">Each skill points to a result on this page or a role in my experience.</p>
+    <div class="skills">
+      <article class="skill"><h3>Multi-platform media buying</h3><ul><li>Meta, Google, YouTube, TikTok and Snapchat</li><li>Platform mix chosen by goal and audience</li></ul><p class="proof"><span class="tag eg">E-Gurus</span>Campaigns across five ad platforms</p></article>
+      <article class="skill"><h3>Campaign structure</h3><ul><li>ABO vs CBO based on the goal</li><li>Separate prospecting, retargeting and catalog</li></ul><p class="proof"><span class="tag cb">C&amp;B</span>Pink Friday launch with both ABO and CBO</p></article>
+      <article class="skill"><h3>Catalog and Advantage+</h3><ul><li>Catalog campaigns across all products</li><li>An efficient base next to creative-led campaigns</li></ul><p class="proof"><span class="tag eg">E-Gurus</span>Catalog at 5.16x, EGP 189 per purchase</p></article>
+      <article class="skill"><h3>A/B and creative testing</h3><ul><li>UGC, influencer, carousel and video</li><li>Test targeting, creative and bidding one at a time</li></ul><p class="proof"><span class="tag cb">C&amp;B</span>UGC at 7.5x vs carousel at 5.1x</p></article>
+      <article class="skill"><h3>Budget scaling and CPA control</h3><ul><li>Scale winners while watching cost per purchase</li><li>Keep high-ROAS tests lean until proven</li></ul><p class="proof"><span class="tag eg">E-Gurus</span>EGP 539K on one campaign, 2,088 purchases</p></article>
+      <article class="skill"><h3>Shopify store management</h3><ul><li>Daily sales, orders, conversion rate and AOV</li><li>Store changes that lift conversion</li></ul><p class="proof"><span class="tag eg">E-Gurus</span>Store conversion rate up 26%</p></article>
+      <article class="skill"><h3>Offers and seasonal planning</h3><ul><li>Installments and bundles to raise basket size</li><li>Pink Friday, Valentine's, Ramadan, Mother's Day</li></ul><p class="proof"><span class="tag cb">C&amp;B</span>Average order up to EGP 2,848</p></article>
+      <article class="skill"><h3>Lead generation</h3><ul><li>Lead-quality creative and copy tests</li><li>CPL and conversion tracking for real estate</li></ul><p class="proof"><span class="tag ak">Al Khalil</span>Freelance real estate campaigns</p></article>
+      <article class="skill"><h3>Reporting and AI tools</h3><ul><li>Read Shopify and Meta data side by side</li><li>AI tools and agents for reports and automation</li></ul><p class="proof"><span class="tag eg">Both</span>The charts and tables on this page</p></article>
     </div>
-
-    <div class="tool-cards">
-      <div class="tool-card reveal">
-        <div class="ic">📢</div>
-        <h4>Meta Ads</h4>
-        <p>Facebook &amp; Instagram campaigns run through Business Manager across two ad accounts — Cherry and B (general) and C&amp;B-Cairo. Built and scaled ABO, CBO, retargeting, and carousel formats.</p>
-      </div>
-      <div class="tool-card reveal">
-        <div class="ic">🛍️</div>
-        <h4>Shopify</h4>
-        <p>Monitored daily gross sales, conversion rate, AOV, and orders. Used analytics to correlate ad spend with revenue and identify optimization opportunities in real time.</p>
-      </div>
-    </div>
+    <div class="tools" aria-label="Tools"><span>Meta Ads Manager</span><span>Google Ads</span><span>TikTok Ads</span><span>Snapchat Ads</span><span>Shopify</span><span>AI tools and agents</span><span>Content calendars</span></div>
+    <div class="media" data-media="skills"></div>
   </div>
 </section>
 
-
-<section id="contact">
-    <div class="wrap">
-
-        <div class="eyebrow reveal">Contact</div>
-
-        <h2 class="section-title reveal">
-            Let's Work Together
-        </h2>
-
-        <p class="section-sub reveal">
-            Feel free to reach out for collaborations, freelance work, or full-time opportunities.
-        </p>
-
-        <div class="contact-links reveal">
-
-            <a href="mailto:ns0365093@gmail.com" class="contact-item">
-                <i class="fa-solid fa-envelope"></i>
-                <span>ns0365093@gmail.com</span>
-            </a>
-
-            <a href="https://www.linkedin.com/in/nouran-salah-573aab215/"
-               target="_blank"
-               class="contact-item">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>LinkedIn</span>
-            </a>
-
-            <a href="tel:+201099908458" class="contact-item">
-                <i class="fa-solid fa-phone"></i>
-                <span>+201099908458</span>
-            </a>
-
-        </div>
-
-    </div>
-</section>
-<footer>
+<!-- EDUCATION -->
+<section id="education">
   <div class="wrap">
-    <div class="brand">Nouran<span class="dot">.</span></div>
-    <p>Media Buyer · Performance Marketing · Cairo, Egypt</p>
-    <div class="foot-note">PORTFOLIO PREPARED FOR NOUR · CHERRY &amp; BRUSH EGYPT · DATA AS OF JUNE 2026</div>
+    <p class="eyebrow">Education</p>
+    <h2 style="margin-top:12px">Education and courses</h2>
+    <div class="edu">
+      <article><p class="when">2019 – 2023</p><h3>Bachelor of Languages &amp; Translation</h3><p>Al-Azhar University</p><p class="big">3.65 <span style="font-size:1rem;color:var(--muted);font-weight:600">GPA</span></p></article>
+      <article><p class="when">Diploma</p><h3>Digital Marketing Diploma</h3><p>DM Arts Academy</p><p data-edit="edu-dm">Focus on media buying, content creation and SEO, with hands-on experience running and optimizing paid campaigns.</p></article>
+      <article><p class="when">Languages</p><h3>English</h3><p data-edit="edu-lang">Working proficiency, backed by a degree in languages and translation.</p></article>
+    </div>
+    <div class="media" data-media="education"></div>
   </div>
-</footer>
+</section>
 
-<!-- ================= LIGHTBOX ================= -->
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
-  <button class="lightbox-close" id="lbClose" aria-label="Close">✕</button>
-  <button class="lightbox-nav prev" id="lbPrev" aria-label="Previous image">‹</button>
-  <button class="lightbox-nav next" id="lbNext" aria-label="Next image">›</button>
-  <div class="lightbox-inner">
-    <img id="lbImg" src="" alt="">
-    <div class="lightbox-caption">
-      <strong id="lbTitle"></strong>
-      <span id="lbMeta"></span>
+<!-- PROOF -->
+<section id="proof">
+  <div class="wrap">
+    <p class="eyebrow">Screenshots</p>
+    <h2 style="margin-top:12px">Straight from the accounts</h2>
+    <p class="lead" data-edit="proof-lead">Captured from Shopify Admin and Meta Ads Manager. Select an image to enlarge it, then use the arrows or your keyboard to move between them.</p>
+    <div class="tabs">
+      <div class="seg" role="group" aria-label="Screenshot source">
+        <button type="button" id="t-eg" data-t="proof_eg" aria-pressed="false">E-Gurus</button>
+        <button type="button" id="t-cbs" data-t="proof_cbs" aria-pressed="true">Cherry &amp; Brush · Shopify</button>
+        <button type="button" id="t-cbm" data-t="proof_cbm" aria-pressed="false">Cherry &amp; Brush · Meta</button>
+      </div>
+      <div class="media" data-media="proof_eg" hidden></div>
+      <div class="media" data-media="proof_cbs"></div>
+      <div class="media" data-media="proof_cbm" hidden></div>
     </div>
   </div>
-</div>
+</section>
 
-<script>
-  // mobile nav toggle
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2 style="margin-top:12px">Let's grow your store's sales</h2>
+    <p class="lead" data-edit="contact-lead">Open to freelance projects and full-time paid media roles. Based in Masr El Gedida, Cairo.</p>
+    <div class="clist2">
+      <div class="citem"><small>Email</small><span class="val" id="c-mail">ns0365093@gmail.com</span><button class="copy" type="button" data-copy="c-mail">Copy email</button></div>
+      <div class="citem"><small>Phone / WhatsApp</small><span class="val" id="c-tel">+20 109 990 8458</span><button class="copy" type="button" data-copy="c-tel">Copy number</button></div>
+      <div class="citem"><small>LinkedIn</small><a href="https://www.linkedin.com/in/nouran-salah-573aab215/" target="_blank" rel="noopener">Nouran Salah ↗</a><span style="opacity:.8;font-size:.9rem">Opens in a new tab</span></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span>Nouran Salah, e-commerce media buyer in Cairo. Data from Shopify and Meta Ads Manager, current to October 2026.</span><button type="button" class="ghostbtn" id="editDot" aria-label="Edit page" title="Edit">✎</button></div></footer>
 
-  // scroll reveal
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+<dialog id="lightbox" aria-label="Image preview">
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+  <div class="lbbar"><button type="button" id="lbPrev">← Previous</button><button type="button" id="lbClose">Close</button><button type="button" id="lbNext">Next →</button></div>
+</dialog>
 
-  // ---------- lightbox ----------
-  const lightbox = document.getElementById('lightbox');
-  const lbImg = document.getElementById('lbImg');
-  const lbTitle = document.getElementById('lbTitle');
-  const lbMeta = document.getElementById('lbMeta');
-  const lbClose = document.getElementById('lbClose');
-  const lbPrev = document.getElementById('lbPrev');
-  const lbNext = document.getElementById('lbNext');
-
-  let currentGroup = [];
-  let currentIndex = 0;
-
-  function openLightbox(group, index){
-    currentGroup = Array.from(document.querySelectorAll('.shot-frame[data-full]')).filter(f => f.closest('[data-group="' + group + '"]'));
-    currentIndex = index;
-    renderLightbox();
-    lightbox.classList.add('open');
-  }
-
-  function renderLightbox(){
-    const btn = currentGroup[currentIndex];
-    if(!btn) return;
-    lbImg.src = btn.dataset.full;
-    lbImg.alt = btn.dataset.caption;
-    lbTitle.textContent = btn.dataset.caption;
-    lbMeta.textContent = btn.dataset.meta || '';
-  }
-
-  function closeLightbox(){ lightbox.classList.remove('open'); }
-
-  document.querySelectorAll('.gallery-grid').forEach(grid => {
-    const group = grid.dataset.group;
-    const frames = Array.from(grid.querySelectorAll('.shot-frame'));
-    frames.forEach((frame, i) => {
-      frame.addEventListener('click', () => openLightbox(group, i));
-    });
-  });
-
-  lbClose.addEventListener('click', closeLightbox);
-  lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
-  lbPrev.addEventListener('click', () => { currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length; renderLightbox(); });
-  lbNext.addEventListener('click', () => { currentIndex = (currentIndex + 1) % currentGroup.length; renderLightbox(); });
-
-  document.addEventListener('keydown', (e) => {
-    if(!lightbox.classList.contains('open')) return;
-    if(e.key === 'Escape') closeLightbox();
-    if(e.key === 'ArrowLeft') lbPrev.click();
-    if(e.key === 'ArrowRight') lbNext.click();
-  });
-</script>
-
+<!-- Page content edited in edit mode (text overrides and images). Add #edit to the address to open the editor. -->
+<script type="application/json" id="cms">{
+ "v": 1,
+ "text": {},
+ "media": {
+  "proof_cbs": [
+   {
+    "src": "pink-friday.png",
+    "t": "Pink Friday peak",
+    "s": "Nov 2025: gross sales EGP 35.51M, 12.9K orders"
+   },
+   {
+    "src": "mothers-day.png",
+    "t": "Mother's Day surge",
+    "s": "Mar 2026: gross sales EGP 17.46M, 4,501 orders"
+   },
+   {
+    "src": "traffic-view.png",
+    "t": "Traffic view",
+    "s": "Mar 2026: 288.4K sessions (+154%)"
+   },
+   {
+    "src": "post-event-dip.png",
+    "t": "After the events",
+    "s": "Apr 2026: gross sales EGP 7.38M (−57%)"
+   },
+   {
+    "src": "recovery-month.png",
+    "t": "Recovery month",
+    "s": "May 2026: gross sales EGP 11.98M (+52%)"
+   }
+  ],
+  "proof_cbm": [
+   {
+    "src": "meta-cbo-cairo.jfif",
+    "t": "C&B-Cairo, CBO campaigns",
+    "s": "753 purchases at EGP 195 each on the top campaign"
+   },
+   {
+    "src": "meta-abo-cairo.jfif",
+    "t": "C&B-Cairo, ABO campaigns",
+    "s": "Retargeting: 214 purchases at EGP 123 each"
+   },
+   {
+    "src": "meta-dec-2025.jfif",
+    "t": "Cherry & B, December 2025",
+    "s": "CTA ABO: 971 purchases at EGP 221 each"
+   },
+   {
+    "src": "meta-nov-2025.jfif",
+    "t": "Cherry & B, November 2025",
+    "s": "Broad and ABO: 567 and 568 purchases"
+   },
+   {
+    "src": "meta-oct-nov-2025.jfif",
+    "t": "Cherry & B, Oct to Nov 2025",
+    "s": "Retargeting 242 purchases, Broad 392"
+   }
+  ]
+ }
+}</script>
+<script src="main.js"></script>
 </body>
 </html>
